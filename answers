@@ -1,0 +1,232 @@
+clash of code water challenge
+question:
+
+print N for each step water goes down
+answer
+
+n = int(input())
+water = input()
+for i in range(n):
+    print(i*" "+water)
+    
+    question:
+    for each time a letter a-z shows up double it and if it shows up again triple it
+    answer:
+    r = ''
+for i in range(len(x)):
+    r += x[:i + 1].count(x[i]) * x[i]
+
+print(r)
+
+
+
+
+question:
+compute the area of trapezoid
+
+
+answer:
+area = ((base_1 + base_2) / 2) * height
+
+
+questions:
+create a number 
+
+answer:
+def solve(s):
+    res='('+s[:3]+') '+s[3:6]+'-'+s[6:]
+    return res
+s = input()
+
+
+question:
+In a village, two fighters a and b want to be the king of the village, but both cannot be the king, that's why they started a fight.
+
+answer:
+for i in range(r):
+    a -= b_1
+    b -= a_1
+    a += a_1//2
+    b += b_1//2
+    if b <= 0 or a <= 0:
+        break
+
+print(f"A {a}" if b < a else f"B {b}")
+
+
+print(solve(s))
+
+question:
+atrmetic progression
+
+answer:
+print(a+(n-1)*d)
+
+
+question:
+You are given a string. You need to print no and count of either COWS or MILK if COWS and MILK (as a word) appear same number of times in string, otherwise print counts of COWS and MILK respectively.
+answer:
+s=input().split()
+c=s.count('COWS')
+m=s.count('MILK')
+print('no '+str(c)if c==m else str(c)+' '+str(m))
+
+question: 
+abcdefg prirmid
+
+answer:
+n = int(input())
+for i in range(n):
+    for j in range(i+1):
+        print(chr(ord('A')+j),end='')
+    print()
+    
+question:
+Your program must perform a bitwise NOT on a binary number given through the standard input and print the result to the standard output.
+
+answer:
+r=""
+for i in b:
+    if i=="0":r+="1"
+    else:r+="0"
+print(r)
+
+
+question:
+n = int(input())
+print(1000-2*n)
+
+question:
+From a list of numbers you have to find the number that appears an odd number of times
+answer:
+length = int(input())
+c = []
+n = input().split()
+for i in set(n):
+    if n.count(i) % 2 == 1:
+        c += [i]
+
+if len(c) > 0:
+    print(c[0])
+else:
+    print(0)
+    
+question:
+Your program must output all the odd numbers from 1 to N where N is given as input.
+
+answer:
+n = int(input())
+for i in range(n+1):
+    if i%2==1:
+        print(i)
+        
+question:
+You get an 'encrypted' string as your input (X). You have to create a new string as follows:
+- pick the leftmost character from X
+- pick the rightmost character from X
+- pick the second leftmost character from X
+- pick the second rightmost character from X
+- ... continue until you have used all the characters in X
+
+answer:
+x = input()
+out = ""
+
+i = 1
+while len(x):
+    if i%2:
+        out += x[0]
+        x = x[1:]
+    else:
+        out += x[-1]
+        x = x[:-1]
+    i+=1
+
+print(out)
+
+
+question:
+During the summer days. The ants work very hard to collect food for winter, and the grasshopper just sleeps all day. When winter comes the ants stay in their houses, they share and eat food, but the grasshopper has nothing to eat.
+
+The grasshopper's health is g. Day by day his health decreases by e, and eating 1 piece of some food increases his health by 1.
+
+answer:
+I=input
+d=int(I())
+g,e,a=map(int,I().split())
+g+=d*a-d*e
+I(g if g>0else'Dead')
+
+question
+
+Sunrise. You drive your bus to the first bus stop without any passenger.
+At each bus stop, some people get in the bus, and other people get off the bus.
+You have to count how many people are in the bus at the end, including yourself.
+
+answer:
+r=0
+n = int(input())
+for i in range(n):
+    a,b = [int(j) for j in input().split()]
+    r=r+a-b
+
+
+print(r+1)
+
+
+question:
+You must feed your d dogs, for that you have k grams of kibble. Each weight of dog corresponds to a dose of kibble : 
+
+answer:
+k = int(input())
+d = int(input())
+for i in range(d):
+    w = float(input())
+    if w<=5:
+        k-=80
+    elif w<=10:
+        k-=150
+    elif w<=20:
+        k-=260
+    elif w<=30:
+        k-=375
+    elif w<=40:
+        k-=470
+    elif w<=50:
+        k-=560
+    else:
+        k-=600
+if k>=0:
+    print("Yes")
+else:
+    print(abs(k))
+    
+question:
+Given a word W containing only uppercase and lowercase letters, return the number of distinct letters (regardless of a case) in W.
+
+answer:
+w = input().lower()
+z=[]
+for i in w:
+    if not i in z:
+        z.append(i)
+print(len(z))
+
+question:
+You need to calculate if it is possible to fuel up a spaceship within the number of seconds allowed(t), given the capacity of the tank (c) in litres, and the number of litres of fuel that can be pumped into its tank per second (r).
+answer:
+t, c, r = [int(i) for i in input().split()]
+
+
+if c >= t * r:
+    print("yes")
+else:
+    print("no")
+
+
+
+
+question:
+get third angle
+answer:
+print(180-(a+b))
